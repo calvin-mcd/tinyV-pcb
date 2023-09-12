@@ -19,6 +19,7 @@ This is an integrated, hotswap pcb for the tinyV by BA (BAonDiscord7634). It is 
 The case is being created by BA.
 
 early design examples:
+
 ![](https://github.com/calvin-mcd/tinyV-pcb/blob/main/Images/tinyV_v7_exploded.png)  
 ![](https://github.com/calvin-mcd/tinyV-pcb/blob/main/Images/tinyV_v7_render.png)  
   
