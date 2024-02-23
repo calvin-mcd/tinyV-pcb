@@ -81,11 +81,11 @@
         )
       )
     )
-    (symbol "Connector:Conn_01x09_Socket" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Connector:Conn_01x10_Socket" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (at 0 12.7 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "Conn_01x09_Socket" (at 0 -12.7 0)
+      (property "Value" "Conn_01x10_Socket" (at 0 -15.24 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -100,13 +100,17 @@
       (property "ki_keywords" "connector" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic connector, single row, 01x09, script generated" (at 0 0 0)
+      (property "ki_description" "Generic connector, single row, 01x10, script generated" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "Connector*:*_1x??_*" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "Conn_01x09_Socket_1_1"
+      (symbol "Conn_01x10_Socket_1_1"
+        (arc (start 0 -12.192) (mid -0.5058 -12.7) (end 0 -13.208)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
         (arc (start 0 -9.652) (mid -0.5058 -10.16) (end 0 -10.668)
           (stroke (width 0.1524) (type default))
           (fill (type none))
@@ -120,6 +124,14 @@
           (fill (type none))
         )
         (arc (start 0 -2.032) (mid -0.5058 -2.54) (end 0 -3.048)
+          (stroke (width 0.1524) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -1.27 -12.7)
+            (xy -0.508 -12.7)
+          )
           (stroke (width 0.1524) (type default))
           (fill (type none))
         )
@@ -218,6 +230,10 @@
         (pin passive line (at -5.08 10.16 0) (length 3.81)
           (name "Pin_1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at -5.08 -12.7 0) (length 3.81)
+          (name "Pin_10" (effects (font (size 1.27 1.27))))
+          (number "10" (effects (font (size 1.27 1.27))))
         )
         (pin passive line (at -5.08 7.62 0) (length 3.81)
           (name "Pin_2" (effects (font (size 1.27 1.27))))
@@ -1553,11 +1569,27 @@
     (uuid f08fbdc2-c5de-43d9-856d-258c093c8edf)
   )
 
+  (no_connect (at 256.54 96.52) (uuid 06b73ab1-4de3-4c4f-a08b-3e9f6bb3098e))
+  (no_connect (at 223.52 86.36) (uuid 0c4aeb0a-17fc-4873-b5db-ba58f0e13ea1))
+  (no_connect (at 256.54 60.96) (uuid 1676be94-aeee-430f-b306-2c8928e76d9a))
+  (no_connect (at 223.52 66.04) (uuid 1b7920db-21cc-40eb-b3f0-32d193fe191d))
+  (no_connect (at 223.52 91.44) (uuid 1d9cad20-efc1-428f-b6d9-0b50378e149d))
+  (no_connect (at 26.67 134.62) (uuid 207b45e4-38d1-4c90-88cc-0dbd5faff7a1))
   (no_connect (at 223.52 55.88) (uuid 2116fb12-15bd-4313-a14b-6e58b809e73a))
+  (no_connect (at 223.52 63.5) (uuid 31b6ccc1-9390-4889-b5c7-7e2222842624))
+  (no_connect (at 256.54 76.2) (uuid 32c69eea-5b6d-443e-9822-d4e9ec4858d1))
+  (no_connect (at 49.53 121.92) (uuid 32f24ce8-e199-4654-96db-9e04f5b589f6))
+  (no_connect (at 223.52 88.9) (uuid 404bc5fb-388e-4d8f-b96b-4580ead08193))
   (no_connect (at 223.52 50.8) (uuid 59dbe8c3-4c83-4e0f-ad16-dadc68de9f25))
   (no_connect (at 256.54 93.98) (uuid 83822793-ee41-475a-8b3d-24a8924a280a))
   (no_connect (at 223.52 53.34) (uuid 9e145cd4-b9ac-4160-aca3-a9423e12a82a))
+  (no_connect (at 256.54 63.5) (uuid bffb3446-7908-48ba-992a-87b48d12b44d))
+  (no_connect (at 223.52 45.72) (uuid ced87574-3d34-4ce5-85ce-1601511dbb31))
+  (no_connect (at 256.54 66.04) (uuid d023e870-42b5-4f86-accb-f0ff866d17d5))
+  (no_connect (at 223.52 60.96) (uuid db9d5545-5965-4b15-b9e5-389ffb1125ea))
   (no_connect (at 256.54 73.66) (uuid df194c37-1b38-4d0a-b12c-9cf063038bc1))
+  (no_connect (at 223.52 99.06) (uuid eadfbdcb-e9f9-4755-9298-1ea5a3973f84))
+  (no_connect (at 223.52 43.18) (uuid f082d7e3-7008-4ae8-91c3-1738e96fd0f1))
 
   (wire (pts (xy 49.53 167.64) (xy 49.53 168.91))
     (stroke (width 0) (type default))
@@ -2172,19 +2204,19 @@
     (fill (type none))
     (uuid 2e6ef095-6bb2-4707-b4cb-0e76a1eae46f)
   )
-  (rectangle (start 16.256 110.49) (end 69.85 146.558)
+  (rectangle (start 17.78 113.03) (end 63.7625 149.0729)
     (stroke (width 0) (type default))
     (fill (type none))
-    (uuid d70228e4-b7b7-4697-9a34-7fb55e6c43ff)
+    (uuid ddf3c2ad-1836-4f70-a1f0-0cd3145f7e9a)
   )
 
   (text "Pico EZmate" (at 115.697 135.89 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 0e794e81-841e-47ce-9c06-53bc552625a2)
   )
-  (text "JST connectors\nfor the two pcb halves" (at 44.704 144.018 0)
+  (text "Hirose FFC connectors\nfor the two pcb halves" (at 39.37 147.32 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 70ae9884-c3cf-49d1-acf2-8cbe715dce80)
+    (uuid 9b91fbef-64ec-421f-b88e-9c8e60eb4b45)
   )
   (text "reset/boot circuit" (at 55.372 194.564 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -2214,10 +2246,24 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "ROW1" (shape input) (at 49.53 137.16 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 03a6e1ce-e9b2-4969-a0ee-cd40aad15064)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.3628 137.16 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "ROW2" (shape input) (at 44.45 80.01 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 04888edc-67f4-4a9a-aa60-db7fec641431)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 36.2828 80.01 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "COL7" (shape input) (at 26.67 127 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 066c7f4b-6f41-4e9e-b010-3f0f6206fe56)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 18.9261 127 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2235,10 +2281,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "COL5" (shape input) (at 52.832 120.142 180) (fields_autoplaced)
+  (global_label "COL8" (shape input) (at 26.67 124.46 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 0a98095d-45f9-4f7f-ae10-fd4e37892e25)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 45.0881 120.142 0)
+    (uuid 0b1e2a31-7aad-4780-a65a-bb6a27679896)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 18.9261 124.46 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2256,18 +2302,18 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "COL9" (shape input) (at 49.53 134.62 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 194bf114-7e7b-4080-8359-504aa22ce5bb)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.7861 134.62 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "ROW1" (shape input) (at 256.54 81.28 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 1cf0642e-f1a0-4f00-b8d9-c7d3ec2f8fef)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 264.7072 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-  (global_label "COL7" (shape input) (at 29.972 125.476 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 20c78bc8-08a8-421b-ab6f-1cd188afc186)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 22.2281 125.476 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
   (global_label "COL7" (shape input) (at 152.4 25.4 90) (fields_autoplaced)
@@ -2277,24 +2323,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "ROW0" (shape input) (at 29.972 115.316 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 23464f00-6c2a-4a92-ae16-921875cff042)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 21.8048 115.316 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "D_P" (shape input) (at 93.98 146.304 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 23c338e3-4622-4054-a867-84527f27e2c4)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 87.5666 146.304 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "ROW1" (shape input) (at 52.832 132.842 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 23e7e353-796b-4184-939c-2ea3174e90cd)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 44.6648 132.842 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2305,6 +2337,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "COL7" (shape input) (at 49.53 129.54 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 29d47123-445d-439d-a78b-d3035c35bf45)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.7861 129.54 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "COL2" (shape input) (at 223.52 83.82 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 2a879db2-53da-41db-9e8e-65ed06cf0964)
@@ -2312,10 +2351,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "COL8" (shape input) (at 52.832 127.762 180) (fields_autoplaced)
+  (global_label "ROW0" (shape input) (at 49.53 139.7 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 3b307dfd-2378-42c8-85ad-eb63b1e8eb86)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 45.0881 127.762 0)
+    (uuid 2d0b3a68-d3e3-45e3-9f88-88dfb3df68f7)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.3628 139.7 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2340,24 +2379,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "ROW1" (shape input) (at 29.972 117.856 180) (fields_autoplaced)
+  (global_label "COL6" (shape input) (at 26.67 129.54 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 4c373617-3e53-4a1b-a7a3-66e241164e8c)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 21.8048 117.856 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "ROW3" (shape input) (at 52.832 115.062 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 54fcdf54-ac83-4003-83b0-730f602cd0d8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 44.6648 115.062 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "COL6" (shape input) (at 29.972 128.016 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 5bbe3104-7afa-4a9a-a0c4-1a593c13bc0f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 22.2281 128.016 0)
+    (uuid 59a838c5-7bb9-4715-9169-314db3976f07)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 18.9261 129.54 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2403,6 +2428,13 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
+  (global_label "ROW3" (shape input) (at 26.67 137.16 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 75b19c45-d90c-436f-9b50-36ab794bd5cd)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 18.5028 137.16 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "BOOT0" (shape input) (at 223.52 38.1 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 77863aca-95f0-4cc7-aaf2-e0599b1c9434)
@@ -2414,13 +2446,6 @@
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 7d461932-df32-462b-bc0e-10aadf4ec1a4)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 215.7761 81.28 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "ROW3" (shape input) (at 29.972 135.636 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 7df4da35-b82f-407f-bce6-68917523448b)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 21.8048 135.636 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2445,10 +2470,24 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "COL9" (shape input) (at 26.67 121.92 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 80e5fc74-9273-4e9d-9e91-08be2dd014ca)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 18.9261 121.92 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "ROW1" (shape input) (at 121.285 60.96 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 8d94d057-f4f3-4536-90f9-dc741bf52265)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 113.1178 60.96 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "ROW2" (shape input) (at 49.53 116.84 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 8f1254d6-eac3-469a-b24f-c2b701bca684)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.3628 116.84 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2459,6 +2498,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "ROW2" (shape input) (at 26.67 139.7 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 92d217a2-e25f-43a8-9456-5f435c9e77f5)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 18.5028 139.7 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "COL6" (shape input) (at 223.52 73.66 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 96653288-b333-489c-957e-ce972a5a0600)
@@ -2466,10 +2512,24 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "underglow" (shape input) (at 223.52 86.36 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
+  (global_label "underglow" (shape input) (at 256.54 78.74 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
     (uuid 9896ec7c-0915-4368-84a6-4d2adb70ddc1)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 210.9987 86.36 0)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 269.0613 78.74 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
+  (global_label "COL5" (shape input) (at 26.67 132.08 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 9c8b56a9-89e0-476d-8249-c57f52e784fd)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 18.9261 132.08 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "COL5" (shape input) (at 49.53 124.46 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid aaa5278a-eec6-4c32-a5ae-126a68dd221d)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.7861 124.46 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2501,31 +2561,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "COL9" (shape input) (at 29.972 120.396 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid ae489ce7-b781-4841-a9af-d9f07a87a5d1)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 22.2281 120.396 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "COL6" (shape input) (at 52.832 122.682 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b1e31c9c-8bd6-4fa7-87bb-0fde49f36bd9)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 45.0881 122.682 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
   (global_label "BOOT0" (shape input) (at 26.67 173.99 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid b7305257-76d3-4348-8cb3-eb21af835757)
     (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 17.6561 173.99 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "COL7" (shape input) (at 52.832 125.222 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid b8ff4dcf-3c57-4a30-84ce-8434eb9c5637)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 45.0881 125.222 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2550,6 +2589,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "ROW0" (shape input) (at 26.67 116.84 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid cd65876a-e661-4817-9cc4-b40aec8ffa27)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 18.5028 116.84 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "COL4" (shape input) (at 223.52 78.74 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid ce1c3783-f9a2-4c5a-8f18-b5eb9a9dab53)
@@ -2557,10 +2603,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "ROW0" (shape input) (at 52.832 135.382 180) (fields_autoplaced)
+  (global_label "ROW1" (shape input) (at 26.67 119.38 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid d4c01945-0683-4ee0-961a-1c2d7378a86f)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 44.6648 135.382 0)
+    (uuid d4d644fe-f5ff-4483-9ac7-b4cafb7c6424)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 18.5028 119.38 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2592,24 +2638,10 @@
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
-  (global_label "ROW2" (shape input) (at 29.972 133.096 180) (fields_autoplaced)
+  (global_label "ROW3" (shape input) (at 49.53 119.38 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid e3e304e8-f6fe-4392-8f91-f4a09f452d7a)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 21.8048 133.096 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "ROW2" (shape input) (at 52.832 117.602 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid ebf0b00a-ab42-4b5f-b944-5a92c9b382aa)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 44.6648 117.602 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "COL5" (shape input) (at 29.972 130.556 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid f00af14a-54a6-446b-8a2a-9ef512d079a8)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 22.2281 130.556 0)
+    (uuid f0e821fa-2dde-4398-8171-059b2063b3d2)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.3628 119.38 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2620,6 +2652,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "COL8" (shape input) (at 49.53 132.08 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid f43c0530-1307-452a-8871-0ec25a264f08)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.7861 132.08 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
   (global_label "COL1" (shape input) (at 256.54 83.82 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f478cc74-d1fe-463f-b205-1a9eca033a50)
@@ -2627,17 +2666,10 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
-  (global_label "COL8" (shape input) (at 29.972 122.936 180) (fields_autoplaced)
+  (global_label "COL6" (shape input) (at 49.53 127 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid f61b5868-b5cb-421d-b2c6-35d2fcac32d0)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 22.2281 122.936 0)
-      (effects (font (size 1.27 1.27)) (justify right) hide)
-    )
-  )
-  (global_label "COL9" (shape input) (at 52.832 130.302 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid f9e24ffa-449b-4ba2-9c90-e96eded59c8e)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 45.0881 130.302 0)
+    (uuid f5e50c40-214f-4b3e-8ad6-259a9fb00f80)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 41.7861 127 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
   )
@@ -2666,7 +2698,7 @@
     (pin "1" (uuid a4621d0a-fee0-4e93-a0b5-1264f7e84b1e))
     (pin "2" (uuid 77eaffd9-95cd-4b43-a0bd-f7c1054d471a))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D27") (unit 1)
         )
@@ -2698,7 +2730,7 @@
     (pin "1" (uuid e55709e0-1a7f-4389-9bf2-7d48cda1d9a5))
     (pin "2" (uuid c11ee4e1-b556-49bd-8247-9ceabba9718b))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D8") (unit 1)
         )
@@ -2730,7 +2762,7 @@
     (pin "1" (uuid 448f77c9-3a2d-42c2-8f78-60afbb501bf9))
     (pin "2" (uuid a8b35399-f056-40fa-82cd-fae3056b8fc2))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D6") (unit 1)
         )
@@ -2756,7 +2788,7 @@
     (pin "1" (uuid a7e2ace9-9594-47a3-98ac-c5289b8a3130))
     (pin "2" (uuid b2106eed-463a-4aa0-8675-054997e49dc7))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX8") (unit 1)
         )
@@ -2786,7 +2818,7 @@
           (reference "#PWR0102") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR09") (unit 1)
         )
@@ -2812,7 +2844,7 @@
     (pin "1" (uuid 03fcf0d7-fb34-46d2-a823-6223176db9b2))
     (pin "2" (uuid d665089a-5964-442c-b05d-6d40cd80c069))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX21") (unit 1)
         )
@@ -2844,7 +2876,7 @@
     (pin "1" (uuid 96c42f66-ee49-42d4-9a9b-276ca37c5ac2))
     (pin "2" (uuid 0674856e-8f1a-4120-be0a-137c239edc72))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D25") (unit 1)
         )
@@ -2870,7 +2902,7 @@
     (pin "1" (uuid 3a590fbd-879d-4dce-ac88-637d3a00f320))
     (pin "2" (uuid 1816cfc7-0406-4283-bfe4-89fab32b49c5))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX11") (unit 1)
         )
@@ -2902,7 +2934,7 @@
     (pin "1" (uuid 7bb3821a-7290-4686-8c62-2458cd2d7db7))
     (pin "2" (uuid d756e503-7aab-4cee-b5ba-94b35fbebdab))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D9") (unit 1)
         )
@@ -2934,7 +2966,7 @@
     (pin "1" (uuid b221bb83-ea97-43d8-b14f-764a48e804a3))
     (pin "2" (uuid 13abe102-5e0e-48fa-bb80-f97fab6008a1))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D19") (unit 1)
         )
@@ -2966,7 +2998,7 @@
     (pin "1" (uuid b7c5c05c-a066-4a5d-a92f-91d4e7178123))
     (pin "2" (uuid 144243a0-618d-456a-b8a3-f0a802604c32))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D20") (unit 1)
         )
@@ -3001,7 +3033,7 @@
           (reference "U1") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "U2") (unit 1)
         )
@@ -3027,42 +3059,9 @@
     (pin "1" (uuid 7323fba7-eaaf-4fd7-ae9c-c6a736a64867))
     (pin "2" (uuid e5347c3b-6be0-4b36-a07e-475e67e2d7bd))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX35") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_01x09_Socket") (at 57.912 125.222 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 1ff9f536-b1a8-4033-9747-1b06ca12bda6)
-    (property "Reference" "J6" (at 60.706 124.46 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_01x09_Socket" (at 59.69 133.858 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector_JST:JST_SH_SM09B-SRSS-TB_1x09-1MP_P1.00mm_Horizontal" (at 57.912 125.222 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 57.912 125.222 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid ecba6f61-3a72-4393-8a94-84ec6f6809e5))
-    (pin "2" (uuid 28eb2b84-4a68-412b-a22f-ff66580656d0))
-    (pin "3" (uuid c6efbec8-82a0-4403-961f-4efb1d8783df))
-    (pin "4" (uuid ecf0f709-aac4-46ba-bcc4-0961501d97a3))
-    (pin "5" (uuid d7c59c76-1eaa-4be0-98f1-ecbccdad4981))
-    (pin "6" (uuid 811472e4-956e-422f-9967-ee35ef247f68))
-    (pin "7" (uuid f6928ba2-70b7-4f03-86bc-5521ff808c76))
-    (pin "8" (uuid 9dbef7ef-d281-4513-b5af-0f7e3ffa4136))
-    (pin "9" (uuid b0d8646a-fcc5-4c73-ab6d-5548e19caf7b))
-    (instances
-      (project "tinyv pcb"
-        (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
-          (reference "J6") (unit 1)
         )
       )
     )
@@ -3086,7 +3085,7 @@
     (pin "1" (uuid 9774534d-f407-4ee2-a5b1-2d1f964958d8))
     (pin "2" (uuid 07e0fd19-8931-42d0-9f22-517d6f6e2b56))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX19") (unit 1)
         )
@@ -3118,7 +3117,7 @@
     (pin "1" (uuid e4a77059-14d0-4db1-a773-8e5311f1184f))
     (pin "2" (uuid bfbc2375-7a42-41de-a5cd-ab2e10929fa5))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D14") (unit 1)
         )
@@ -3143,7 +3142,7 @@
     )
     (pin "1" (uuid 057f2e08-060e-452a-8467-9919cf41442e))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR014") (unit 1)
         )
@@ -3185,7 +3184,7 @@
     (pin "1" (uuid fe499f82-3ff8-491a-be11-a1150b33f5da))
     (pin "2" (uuid 31995d6e-7c3a-4332-9d08-7137059a8860))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D40") (unit 1)
         )
@@ -3219,7 +3218,7 @@
           (reference "C1") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C1") (unit 1)
         )
@@ -3251,42 +3250,9 @@
     (pin "1" (uuid 87b8b70b-112d-42c4-8633-02b5760ebde2))
     (pin "2" (uuid 8135a294-7e06-40f9-a3c4-9dc9ac853c3a))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D10") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:Conn_01x09_Socket") (at 35.052 125.476 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 3933cda6-b008-4376-a790-25f03d0d1554)
-    (property "Reference" "J5" (at 38.354 124.714 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "Conn_01x09_Socket" (at 36.576 133.096 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Connector_JST:JST_SH_SM09B-SRSS-TB_1x09-1MP_P1.00mm_Horizontal" (at 35.052 125.476 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 35.052 125.476 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid e9694c30-db68-4df4-b9b0-53e3fe86567c))
-    (pin "2" (uuid b57e0bee-35f0-4711-9c3b-d923ea0d09f6))
-    (pin "3" (uuid 621fefa2-d300-4e86-af17-574326f257b5))
-    (pin "4" (uuid 96c744c5-a0d6-4623-a7c5-7c9f8c69df13))
-    (pin "5" (uuid bbae3d5e-68ae-4a22-8ced-cb3ff556da18))
-    (pin "6" (uuid af826be8-563d-4ce7-9b77-54fa04c90bca))
-    (pin "7" (uuid 4f9a5620-b5ac-48a8-bc57-d3063891299f))
-    (pin "8" (uuid 60020bb9-4f47-4f5c-80a2-ac553d528ad9))
-    (pin "9" (uuid d48d348e-9d21-4680-b4e2-ec7d9452bfe5))
-    (instances
-      (project "tinyv pcb"
-        (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
-          (reference "J5") (unit 1)
         )
       )
     )
@@ -3311,7 +3277,7 @@
     (pin "2" (uuid d2d72693-d145-4ecc-9b1e-945d20fb4698))
     (pin "3" (uuid 4aff280e-9643-40a0-b144-a8981ce31cb5))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "J3") (unit 1)
         )
@@ -3337,7 +3303,7 @@
     (pin "1" (uuid cf30dbf4-ef3f-4d3f-8562-7641daf192e8))
     (pin "2" (uuid c431a5f1-4009-47c2-ba07-44573cd54b7a))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX31") (unit 1)
         )
@@ -3362,7 +3328,7 @@
     )
     (pin "1" (uuid 554c54d1-b52d-4cad-aebb-2cec8bbc8cec))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR018") (unit 1)
         )
@@ -3393,7 +3359,7 @@
     (pin "1" (uuid 70c485a2-0c00-44a0-807f-748e71ecc949))
     (pin "2" (uuid 2a665b4a-aa60-4256-8059-24f9dbb65743))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "R3") (unit 1)
         )
@@ -3424,7 +3390,7 @@
     (pin "1" (uuid 735da71e-fe0c-45cf-9865-e8d43b7d6717))
     (pin "2" (uuid 921871d3-ef71-462a-a93d-50f4a559118b))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C9") (unit 1)
         )
@@ -3453,7 +3419,7 @@
     (pin "4" (uuid 54bb4ccc-2b22-44d2-ae6a-7076304e9344))
     (pin "MP" (uuid a2997e9d-89e3-49fe-b6e1-1d3141114789))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "J2") (unit 1)
         )
@@ -3489,7 +3455,7 @@
     (pin "1" (uuid 81b69f94-4bf2-4c84-8c45-ea559bcd78e2))
     (pin "2" (uuid aa1d132e-e12b-47db-bf56-0deb4ca8f73c))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX14") (unit 1)
         )
@@ -3515,7 +3481,7 @@
     (pin "1" (uuid 57253754-6e3a-4f74-a271-206f3fa47c55))
     (pin "2" (uuid 5b0a776e-d4ba-49f4-9862-326fd9af232f))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX28") (unit 1)
         )
@@ -3544,7 +3510,7 @@
     (pin "4" (uuid 3640a4f2-297f-4630-b159-7bcd92c20f2a))
     (pin "MP" (uuid c37b1407-3165-48bc-8b79-9501b59e7a61))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "J1") (unit 1)
         )
@@ -3580,7 +3546,7 @@
     (pin "1" (uuid 5b3894cf-c3c7-415e-a963-b65d2a2b3719))
     (pin "2" (uuid 2c1ad5b6-0886-4912-ba8d-a9900ee4bfaa))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX10") (unit 1)
         )
@@ -3606,7 +3572,7 @@
     (pin "1" (uuid ec148288-88c5-43d5-9884-ba33e2b74872))
     (pin "2" (uuid 730886d9-c62d-4305-ab91-89cbb508ce05))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX4") (unit 1)
         )
@@ -3640,7 +3606,7 @@
           (reference "C2") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C2") (unit 1)
         )
@@ -3672,7 +3638,7 @@
     (pin "1" (uuid 1ec3f243-5eef-48f3-9d2a-326be52308ef))
     (pin "2" (uuid c84106b2-3d17-4edb-94ad-4e3f877cf31b))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D15") (unit 1)
         )
@@ -3698,7 +3664,7 @@
     (pin "1" (uuid 4aea5996-4a28-4b62-9769-25fae542cb68))
     (pin "2" (uuid 8d61e97a-5e19-4a09-afb1-36ce16f726af))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX18") (unit 1)
         )
@@ -3724,7 +3690,7 @@
     (pin "1" (uuid 24e9af8a-3d4a-4276-b60f-12a8da880659))
     (pin "2" (uuid 08cde069-0bb8-4c25-8eb4-869141363611))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX26") (unit 1)
         )
@@ -3750,7 +3716,7 @@
     (pin "1" (uuid 4a467fe6-7c04-4715-91e7-5776f4a21c46))
     (pin "2" (uuid 9affd2d2-b654-49fa-b99d-4ccad75f6b0d))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX39") (unit 1)
         )
@@ -3782,7 +3748,7 @@
     (pin "1" (uuid f838d623-14f0-4c7f-97fa-719c3827fbaf))
     (pin "2" (uuid 6ed68814-5a93-40b9-85c9-8e7a5c53a1a1))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D7") (unit 1)
         )
@@ -3814,7 +3780,7 @@
     (pin "1" (uuid 32b05491-1b0f-4616-b9dc-e8e62c55527c))
     (pin "2" (uuid e5433655-0f68-4f8c-bd26-4e13bd910240))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D26") (unit 1)
         )
@@ -3848,7 +3814,7 @@
           (reference "C5") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C4") (unit 1)
         )
@@ -3873,7 +3839,7 @@
     )
     (pin "1" (uuid 803df703-73da-411b-854f-835ec0b44f00))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR013") (unit 1)
         )
@@ -3909,7 +3875,7 @@
     (pin "1" (uuid 671ef3ef-8bea-4a81-8fa3-45b6f3533a87))
     (pin "2" (uuid 739b2f70-826a-4c88-8485-57172ffd552f))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX15") (unit 1)
         )
@@ -3935,7 +3901,7 @@
     (pin "1" (uuid f258de86-e8c8-45ca-b6fb-c7772b07d971))
     (pin "2" (uuid 18f2c3bd-0223-4af4-9f31-64a9a4b6b79f))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX24") (unit 1)
         )
@@ -3961,7 +3927,7 @@
     (pin "1" (uuid 4ca7796e-03c1-4bb8-b305-6a94e3d4d25e))
     (pin "2" (uuid e903a8ec-cb5a-4b80-a3aa-4b1f98517846))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX40") (unit 1)
         )
@@ -3985,7 +3951,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "S1") (unit 1)
         )
@@ -4011,7 +3977,7 @@
     (pin "1" (uuid 027f26db-57f3-49ec-a093-4db0c577d6da))
     (pin "2" (uuid 0f1685bc-83f3-47f4-a4e1-6a447f75c6ba))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX1") (unit 1)
         )
@@ -4037,7 +4003,7 @@
     (pin "1" (uuid 9814da35-c30d-42a4-9c53-bd8c7140db73))
     (pin "2" (uuid 87cf292b-c2be-44c2-9dc7-5a9634ba328a))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "R1") (unit 1)
         )
@@ -4074,7 +4040,7 @@
     (pin "1" (uuid b05a5009-1bf8-4c00-85e0-2de086e7f39e))
     (pin "2" (uuid 0e918ba9-5011-49be-8cbc-1ad9ba9d5632))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D37") (unit 1)
         )
@@ -4100,7 +4066,7 @@
     (pin "1" (uuid d210d3bc-00db-4485-9811-cdf558c0ad86))
     (pin "2" (uuid 8d600fc4-6489-45c5-8a30-955f1720cb56))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "R2") (unit 1)
         )
@@ -4137,7 +4103,7 @@
     (pin "1" (uuid 9a1e99b3-d662-4579-8d80-08a663a80ef4))
     (pin "2" (uuid 1d835ddf-2225-48b9-954b-acae6e499ca9))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D12") (unit 1)
         )
@@ -4169,7 +4135,7 @@
     (pin "1" (uuid 171a1467-da9d-45c0-b844-12f806d0fe32))
     (pin "2" (uuid 922dcba9-cc99-4896-a11a-7c0e2cd57240))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D33") (unit 1)
         )
@@ -4201,7 +4167,7 @@
     (pin "1" (uuid ef9460bc-c582-41e2-9b4c-23b647862421))
     (pin "2" (uuid 6c2e8b20-24d8-4006-8556-f9b1f94d06b3))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D5") (unit 1)
         )
@@ -4227,7 +4193,7 @@
     (pin "1" (uuid 1c490b30-3d01-4f5e-b11d-8a69347f1184))
     (pin "2" (uuid 7d75366c-82b7-42d5-a022-04abdd848a42))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX23") (unit 1)
         )
@@ -4259,7 +4225,7 @@
     (pin "1" (uuid 5cb23ef7-0f2b-4528-9dcb-71f88f8b9a5d))
     (pin "2" (uuid 8761f514-eefe-49cf-bccf-cb4b04db397e))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D16") (unit 1)
         )
@@ -4291,7 +4257,7 @@
     (pin "1" (uuid f1fc5930-c757-4cdd-adbb-4bb2e810bd57))
     (pin "2" (uuid d445d87e-bf4a-488d-acc1-299cbd206d8f))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D28") (unit 1)
         )
@@ -4323,7 +4289,7 @@
     (pin "1" (uuid 7bc7b50e-0636-482a-b0bc-be98c4353da0))
     (pin "2" (uuid f93bb4dd-e387-48c8-b912-7dca149861f6))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D13") (unit 1)
         )
@@ -4349,7 +4315,7 @@
     (pin "1" (uuid 315adaf8-4fba-4d13-b468-d2dab15b1fb0))
     (pin "2" (uuid 13dc20a1-b90c-455c-944b-d12634ba7144))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX25") (unit 1)
         )
@@ -4379,7 +4345,7 @@
           (reference "#PWR0102") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR03") (unit 1)
         )
@@ -4405,7 +4371,7 @@
     (pin "1" (uuid 5e199c14-dcd3-4c0d-a805-432a2b42e7e5))
     (pin "2" (uuid d1b8f870-c14b-4538-9216-b4656f5bfe5d))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "SW1") (unit 1)
         )
@@ -4436,7 +4402,7 @@
     (pin "1" (uuid 6e0a9a79-fc8f-470c-9099-3e20f7c04b41))
     (pin "2" (uuid 078d07ef-51cc-4f2b-80f1-cf840c491a29))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX5") (unit 1)
         )
@@ -4462,7 +4428,7 @@
     (pin "1" (uuid d35c9343-aa9b-4954-afca-9b8da2e1ed1f))
     (pin "2" (uuid b5c257f7-abda-4402-9227-4bf19b544cd1))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX32") (unit 1)
         )
@@ -4494,7 +4460,7 @@
     (pin "1" (uuid 43e4ab83-76d2-4a61-94cd-788bc6a49951))
     (pin "2" (uuid 28b9bf98-4d95-4e25-a93e-9afc20a8fd34))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D35") (unit 1)
         )
@@ -4526,7 +4492,7 @@
     (pin "1" (uuid 91c6c784-5804-4a8f-a0b0-aeb22d889a40))
     (pin "2" (uuid 0048649a-1806-4aa3-991e-d7d0d28026d9))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D4") (unit 1)
         )
@@ -4552,7 +4518,7 @@
     (pin "1" (uuid 3347b8a3-ba3d-475f-84e5-4b26b7917d80))
     (pin "2" (uuid 3fbdf192-8cd4-4ebd-847e-d2c417e65ef5))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX34") (unit 1)
         )
@@ -4584,7 +4550,7 @@
     (pin "1" (uuid 6fc7df7c-defc-4f90-a04f-3b4761547e02))
     (pin "2" (uuid edfe27c6-0360-4f3c-88eb-c56f19e5f91a))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D17") (unit 1)
         )
@@ -4610,7 +4576,7 @@
     (pin "1" (uuid 96f7b80a-88ad-4e4b-ad54-82baa3ea302d))
     (pin "2" (uuid ffcdb924-e853-4b60-a448-c9cd9f108fde))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C11") (unit 1)
         )
@@ -4636,7 +4602,7 @@
     (pin "1" (uuid 49cf2265-b354-4c74-bd4d-f58c88b1fcba))
     (pin "2" (uuid d190504e-521c-4798-9919-1235c0e28bc3))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX37") (unit 1)
         )
@@ -4662,7 +4628,7 @@
     (pin "1" (uuid e46be4fa-1dfe-49f9-b2fc-c67ed0340502))
     (pin "2" (uuid 017f89f5-732f-40d2-9bf6-9a44cd81f26e))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX38") (unit 1)
         )
@@ -4687,7 +4653,7 @@
     )
     (pin "1" (uuid ff77726f-103a-430c-9205-6ccc24cbf69e))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR07") (unit 1)
         )
@@ -4718,7 +4684,7 @@
     (pin "1" (uuid 5823e8b8-a6c7-4383-8918-6791c4654407))
     (pin "2" (uuid 382abfae-73e9-4946-b58c-e1c5982ad52b))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX36") (unit 1)
         )
@@ -4744,7 +4710,7 @@
     (pin "1" (uuid 4d4042b5-1512-4645-9cc6-ec4e14c2c0ba))
     (pin "2" (uuid f437b4ff-c3ad-41af-9a6b-375f0b648101))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX17") (unit 1)
         )
@@ -4769,7 +4735,7 @@
     )
     (pin "1" (uuid 21a6fe3a-2ac1-4e13-9f58-62114cc852de))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR011") (unit 1)
         )
@@ -4859,7 +4825,7 @@
           (reference "U3") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "U1") (unit 1)
         )
@@ -4893,7 +4859,7 @@
           (reference "C6") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C5") (unit 1)
         )
@@ -4925,7 +4891,7 @@
     (pin "1" (uuid 1d30b87f-b817-4fd9-a3c6-ed2f4dcd1aa3))
     (pin "2" (uuid 9b466498-b38b-4b81-a6a0-a3f0187b1c31))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D1") (unit 1)
         )
@@ -4950,7 +4916,7 @@
     )
     (pin "1" (uuid 18a155cc-b57f-4255-8e38-7b2f2632d717))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR019") (unit 1)
         )
@@ -4975,7 +4941,7 @@
     )
     (pin "1" (uuid 58785585-8742-4c0a-9640-a86299c8759e))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR012") (unit 1)
         )
@@ -4988,6 +4954,40 @@
       (project "mekanisk-40"
         (path "/f5e5948c-eeca-4160-a5f8-686f765d01ce"
           (reference "#PWR021") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x10_Socket") (at 31.75 127 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a34ee2c0-8db0-4af9-9c7e-da1f7160e45e)
+    (property "Reference" "J4" (at 36.83 127 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Conn_01x10_Socket" (at 34.29 137.16 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal" (at 31.75 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 31.75 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c3fc3392-352f-4f21-9c01-af2193cbb32f))
+    (pin "10" (uuid fb23d64e-a9a8-4ee8-8543-f09fa81ca4da))
+    (pin "2" (uuid 19686902-fcfc-4ca4-9bf5-cb51866f8bd2))
+    (pin "3" (uuid 7834827c-a144-44c4-ab13-e3b6fe0d336a))
+    (pin "4" (uuid c6f792d2-b537-462b-a367-4ccf42155d07))
+    (pin "5" (uuid dc7ee79e-cd54-47cb-94fc-05a733a42803))
+    (pin "6" (uuid 4aed4b6c-83f2-4ee7-9330-f58d2dc4aa02))
+    (pin "7" (uuid 4fe18bb9-af82-496b-b311-14340ffff3a6))
+    (pin "8" (uuid 0eaf8928-2563-4b19-ac3b-209938b95ef8))
+    (pin "9" (uuid ba7fb21d-d331-4ecc-a7a9-12622b700a65))
+    (instances
+      (project "tinyv pcb FFC"
+        (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
+          (reference "J4") (unit 1)
         )
       )
     )
@@ -5011,7 +5011,7 @@
     (pin "1" (uuid 093e0d0e-333e-47d5-9206-f546d7a86e0f))
     (pin "2" (uuid b36874d7-42fc-47d7-bbef-ace9810dbdb7))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX6") (unit 1)
         )
@@ -5043,7 +5043,7 @@
     (pin "1" (uuid 7ef74ccc-c2b9-4ae1-863e-a03a71920a2b))
     (pin "2" (uuid 0f7c255d-ee78-453b-a794-2361948d95ef))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D29") (unit 1)
         )
@@ -5073,7 +5073,7 @@
           (reference "#PWR07") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR05") (unit 1)
         )
@@ -5099,7 +5099,7 @@
     (pin "1" (uuid 36ff6361-f26b-4bb6-9225-65a38590308e))
     (pin "2" (uuid b32001a0-1b77-445c-a0a8-f0590d3d88e4))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C10") (unit 1)
         )
@@ -5131,7 +5131,7 @@
     (pin "1" (uuid 3253cd26-8d47-4d84-a54f-aabd929da9b7))
     (pin "2" (uuid 6e2922c0-c64e-48e1-b373-4b65e797bc0a))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D23") (unit 1)
         )
@@ -5163,7 +5163,7 @@
     (pin "1" (uuid a525316a-1a37-4866-9ad4-d83a5628828b))
     (pin "2" (uuid f2129258-71d2-4128-9e05-8fdd4d866c25))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D36") (unit 1)
         )
@@ -5189,7 +5189,7 @@
     (pin "1" (uuid b2ecdd98-dfc9-4e1b-b363-0ae597e36077))
     (pin "2" (uuid 23461209-e941-4002-8535-7b2388d44286))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX29") (unit 1)
         )
@@ -5215,7 +5215,7 @@
     (pin "1" (uuid fe2eab9a-359d-4717-881f-f2d1107e8efe))
     (pin "2" (uuid 5f82699c-6b6e-497d-b7d4-ae78c9603313))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX20") (unit 1)
         )
@@ -5247,7 +5247,7 @@
     (pin "1" (uuid 1dd24a1c-a67d-4683-9e07-c6aa146a96c6))
     (pin "2" (uuid 4a4bd423-5fbb-482e-b94e-8ade89cba786))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D34") (unit 1)
         )
@@ -5272,7 +5272,7 @@
     )
     (pin "1" (uuid 29667a92-f8e0-4534-9257-00f18185d8f7))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR04") (unit 1)
         )
@@ -5303,7 +5303,7 @@
     (pin "1" (uuid b6984278-c58f-4578-b82b-328437929b8f))
     (pin "2" (uuid df4e08c8-a62b-4a80-9f07-e168ba96ce34))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C8") (unit 1)
         )
@@ -5334,7 +5334,7 @@
     (pin "1" (uuid d16b0db9-9c76-4207-be2b-00f74b26e3bf))
     (pin "2" (uuid aa8046ff-5df5-4908-a79a-0c15679158a8))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX3") (unit 1)
         )
@@ -5364,7 +5364,7 @@
           (reference "#PWR013") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR02") (unit 1)
         )
@@ -5390,7 +5390,7 @@
     (pin "1" (uuid d99912e8-e560-4f0a-8512-2822911f9890))
     (pin "2" (uuid 15a012ca-bf68-4d17-a300-2d2511ea1af5))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX12") (unit 1)
         )
@@ -5420,7 +5420,7 @@
           (reference "#PWR0102") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR010") (unit 1)
         )
@@ -5445,7 +5445,7 @@
     )
     (pin "1" (uuid 526578ed-5540-4bb2-9cd0-5d7ca8affacc))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR020") (unit 1)
         )
@@ -5477,7 +5477,7 @@
     (pin "1" (uuid c5626b48-cb62-4616-80a8-c756cb20f111))
     (pin "2" (uuid 8e5ac1c1-cb49-463a-b93b-8ae3e61b440b))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D11") (unit 1)
         )
@@ -5503,7 +5503,7 @@
     (pin "1" (uuid b95f7345-bf02-4f14-afdf-9d82e0d7cf8f))
     (pin "2" (uuid ee5d54bc-7c91-4b8c-85b2-50b8178f7b4b))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX16") (unit 1)
         )
@@ -5535,7 +5535,7 @@
     (pin "1" (uuid d073c571-22e9-4ff7-a939-2bce35e71a2d))
     (pin "2" (uuid b94f9a67-0457-4298-a7b5-94cf4482f889))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D31") (unit 1)
         )
@@ -5559,7 +5559,7 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "S2") (unit 1)
         )
@@ -5585,7 +5585,7 @@
     (pin "1" (uuid 4f99829d-5200-4f25-845c-7027a7eb806b))
     (pin "2" (uuid 5b94438c-1867-4e80-9172-06684b24a16c))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX2") (unit 1)
         )
@@ -5611,7 +5611,7 @@
     (pin "1" (uuid 0e71ceb7-52a4-4ff6-9592-40bd4946f7d5))
     (pin "2" (uuid 1c7aede1-1d5f-4d07-8709-33375ec431ee))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX7") (unit 1)
         )
@@ -5643,7 +5643,7 @@
     (pin "1" (uuid ada89d26-4970-43a0-b838-4cbd26d73c82))
     (pin "2" (uuid 2dd9450a-0b6c-4b47-b6b9-c1175a8a8bad))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D3") (unit 1)
         )
@@ -5675,9 +5675,43 @@
     (pin "1" (uuid bfb7cd2f-86ff-40c6-a4a5-330512d3960a))
     (pin "2" (uuid 47f6c784-fbb9-4012-8c80-2dc189746985))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D21") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Conn_01x10_Socket") (at 54.61 127 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid dccc5608-4b54-4519-b0ef-7aa8ccf79cd9)
+    (property "Reference" "J7" (at 59.69 128.27 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Conn_01x10_Socket" (at 57.15 138.43 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_FFC-FPC:Hirose_FH12-10S-0.5SH_1x10-1MP_P0.50mm_Horizontal" (at 54.61 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 54.61 127 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1df1d7e1-8657-4a4f-9ac1-428ab4d10c28))
+    (pin "10" (uuid ff2a4dee-be6e-40b0-a9c5-8afed26b4687))
+    (pin "2" (uuid c453033c-8508-475a-8871-220d8253b67a))
+    (pin "3" (uuid a730a206-00c9-428b-acbb-d0007d0ec2d3))
+    (pin "4" (uuid e08fb4e5-f4e8-49c1-a1b0-52e78ccb595a))
+    (pin "5" (uuid 8923ca5f-a9c2-4a4f-8f73-235f2acfc1c5))
+    (pin "6" (uuid c928a84e-c823-4da3-8ab2-cd3db699042b))
+    (pin "7" (uuid 198789ff-c65c-4c12-b83c-8b824f505551))
+    (pin "8" (uuid 455e517f-6179-4e46-9e7a-2075e596e616))
+    (pin "9" (uuid 3e6bcff7-a159-4f3b-a75a-e9ea6a371c83))
+    (instances
+      (project "tinyv pcb FFC"
+        (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
+          (reference "J7") (unit 1)
         )
       )
     )
@@ -5702,7 +5736,7 @@
     (pin "2" (uuid c83a5863-6267-4a69-a71a-1c33b490e200))
     (pin "3" (uuid 432955db-3ea2-4ddd-85b3-7a10b6aedce0))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "Q1") (unit 1)
         )
@@ -5741,7 +5775,7 @@
           (reference "C4") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C3") (unit 1)
         )
@@ -5767,7 +5801,7 @@
     (pin "1" (uuid bc337135-3c28-4b30-b58b-2bba20ab0664))
     (pin "2" (uuid f906e77e-128e-4f49-ad6d-d459d0f11996))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX22") (unit 1)
         )
@@ -5793,7 +5827,7 @@
     (pin "1" (uuid 8925be20-6f35-41c4-9c98-198e07fa9bc1))
     (pin "2" (uuid a356f663-875a-452c-a855-855abcafc1cb))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX27") (unit 1)
         )
@@ -5825,7 +5859,7 @@
     (pin "1" (uuid 850c9845-b83c-46d1-96f9-f7fb591bd1e8))
     (pin "2" (uuid 0608f4de-50d8-4d75-b492-c251b150c6c6))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D24") (unit 1)
         )
@@ -5850,7 +5884,7 @@
     )
     (pin "1" (uuid 34f74547-0885-47b2-973a-962bdd5b6bb7))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR017") (unit 1)
         )
@@ -5881,7 +5915,7 @@
     (pin "1" (uuid 5d2e8e2f-d420-4137-b4ea-a5fc5422d721))
     (pin "2" (uuid e0cca134-61ae-4896-8f79-ac95c6c139f0))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "C7") (unit 1)
         )
@@ -5918,7 +5952,7 @@
     (pin "1" (uuid c2606519-1393-48a1-91fd-28335cd86c89))
     (pin "2" (uuid 862bf87c-dd2e-4acd-a0a4-00c778c5f7b7))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D2") (unit 1)
         )
@@ -5950,7 +5984,7 @@
     (pin "1" (uuid ddc440d8-197c-4f71-8c89-4a40ac3647ef))
     (pin "2" (uuid 2776fac0-a9c1-4047-ac5a-c0fb1020959c))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D18") (unit 1)
         )
@@ -5982,7 +6016,7 @@
     (pin "1" (uuid 3fed12e1-c9b0-4ae8-b4cf-6bfe70e5544e))
     (pin "2" (uuid 56927de7-d195-4514-a606-dd8dbad40e56))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D30") (unit 1)
         )
@@ -6014,7 +6048,7 @@
     (pin "1" (uuid d4a4178a-0212-4c19-aa67-40c127152afb))
     (pin "2" (uuid 75187f32-1273-4ebe-9cb8-5661886f532a))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D38") (unit 1)
         )
@@ -6039,7 +6073,7 @@
     )
     (pin "1" (uuid 8493980b-36c8-4247-a6ff-4494f8656241))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR06") (unit 1)
         )
@@ -6070,7 +6104,7 @@
     (pin "1" (uuid 0c7a7080-d9b2-48ad-b88c-6339fa4f7e31))
     (pin "2" (uuid ee3e1f79-1b0d-45a1-9e17-33065a8dd389))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX30") (unit 1)
         )
@@ -6100,7 +6134,7 @@
           (reference "#PWR011") (unit 1)
         )
       )
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "#PWR08") (unit 1)
         )
@@ -6126,7 +6160,7 @@
     (pin "1" (uuid 7d34addf-40d8-4305-8dcc-a5d0e98c7bd7))
     (pin "2" (uuid 69c3735f-1eb2-4e43-b011-dd9a0213a669))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX9") (unit 1)
         )
@@ -6152,7 +6186,7 @@
     (pin "1" (uuid 54f66f7b-6826-4bbe-bb3a-c12177ec676e))
     (pin "2" (uuid a0a07627-20af-4a45-a311-8de7561a1deb))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX33") (unit 1)
         )
@@ -6178,7 +6212,7 @@
     (pin "1" (uuid 17a22f68-e04b-40b3-a8cb-edacf932229e))
     (pin "2" (uuid e9678397-1c40-4d22-a582-ca848fdf3c89))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "MX13") (unit 1)
         )
@@ -6210,7 +6244,7 @@
     (pin "1" (uuid 4a8ca4f0-1e4a-4939-a83a-7732d435e4fd))
     (pin "2" (uuid 70acd9da-38e7-4e87-85d9-14d5c3ddf41d))
     (instances
-      (project "tinyv pcb"
+      (project "tinyv pcb FFC"
         (path "/71d0184f-aa0c-48df-a58d-1b03357fe306"
           (reference "D22") (unit 1)
         )
